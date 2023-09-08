@@ -26,8 +26,10 @@ jobs:
         run: ./gradlew applyPatches
       - name: Build
         run: ./gradlew build
+      - name: Build Paperclip
+        run: ./gradlew createMojmapPaperclipJar
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: folia
-          path: ./Folia-Server/build/libs/*.jar
+          name: folia-server-artifacts
+          path: ./build/libs/*.jar
