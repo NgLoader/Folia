@@ -1,4 +1,4 @@
-name: Patch and Build
+name: Patch and build with Artifacts
 
 on:
   push:
